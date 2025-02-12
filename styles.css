@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    transition: background-color 0.5s, color 0.5s;
+    overflow: hidden;
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.video-background video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    filter: blur(1px);
+    transition: filter 0.5s;
+}
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px); /* Adds a glassmorphism effect */
+    transition: background-color 0.5s, color 0.5s, box-shadow 0.5s;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2.5rem;
+    color: #007bff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: color 0.5s;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 15px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    border: 2px solid #007bff;
+    resize: none;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+    transition: background-color 0.5s, border-color 0.5s, box-shadow 0.5s;
+}
+
+textarea:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4);
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 3px 10px rgba(0, 123, 255, 0.4);
+}
+
+#toggleDarkMode {
+    background-color: #333;
+    color: #fff;
+}
+
+#toggleDarkMode:hover {
+    background-color: #555;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    color: #f4f4f4;
+}
+
+body.dark-mode .video-background video {
+    filter: blur(6px) brightness(0.5); /* Darkens the video in dark mode */
+}
+
+body.dark-mode .container {
+    background-color: rgba(0, 0, 0, 0.85);
+    color: #f4f4f4;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode h1 {
+    color: #00a8ff;
+}
+
+body.dark-mode textarea {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #f4f4f4;
+    border-color: #00a8ff;
+}
+
+body.dark-mode textarea:focus {
+    border-color: #0097e6;
+    box-shadow: 0 0 15px rgba(0, 168, 255, 0.5);
+}
+
+body.dark-mode button {
+    background-color: #555;
+    color: #f4f4f4;
+}
+
+body.dark-mode button:hover {
+    background-color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    textarea {
+        height: 120px;
+    }
+
+    button {
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    textarea {
+        height: 100px;
+    }
+
+    button {
+        padding: 10px;
+    }
+}
