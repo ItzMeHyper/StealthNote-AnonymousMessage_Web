@@ -52,12 +52,12 @@ To run this project locally, follow these steps:
 ## Screenshots
 
 ### Light Mode
-![image](https://github.com/user-attachments/assets/d41f7130-9c7f-4897-a2a4-bfa75f3466db)
-
+![image](https://github.com/user-attachments/assets/9a2c0a1d-d047-44e5-a38b-2c54bc9e0c85)
 
 
 ### Dark Mode
-![image](https://github.com/user-attachments/assets/9a2c0a1d-d047-44e5-a38b-2c54bc9e0c85)
+![image](https://github.com/user-attachments/assets/d41f7130-9c7f-4897-a2a4-bfa75f3466db)
+
 
 
 ## Contributing
