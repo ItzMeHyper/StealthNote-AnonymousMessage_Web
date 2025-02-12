@@ -31,8 +31,7 @@ To run this project locally, follow these steps:
 1. **Clone the Repository**:
    ```bash
    git clone [https://github.com/your-username/anonymous-message-sender.git](https://github.com/ItzMeHyper/StealthNote-AnonymousMessage_Web.git)
-   cd anonymous-message-sender ```
-
+   cd StealthNote-AnonymousMessage_Web
 2. **Open the Project**:
    - Open the `index.html` file in your browser.
 
